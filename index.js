@@ -125,7 +125,7 @@ MagicHomeAccessory.prototype.setToCurrentColor = function() {
 
 MagicHomeAccessory.prototype.setToWarmWhite = function() {
     var brightness = this.brightness;
-    this.sendCommand('-w ' + brightness);
+    this.sendCommand('-x ' + this.setup + ' -w ' + brightness);
 };
 
 // MARK: - POWERSTATE
